@@ -50,15 +50,15 @@ Most of drama movies are Strongly Cautioned due to contains material that may no
 ## Question 3:
 *How many movies has drama factor released every year? And does their quality increase overtime?*
 
-For counting by every year, we can use groupby and count function by index (or in this case is id) to get total released movies every year.
+For counting by every year, we can use groupby and count function by index (or in this case is **id**) to get total released movies every year.
 
 ![img_08](img/img_08.png "img_08")
 
-As we can see, from 1950 to nearly 2015,movies with drama factor is not top priority of producer until after 2015. On the next 5 years, more than 400 movies has been released but then fell to 100 movies per years. With so much choice in a single time, let's check thier quality base on viewer vote on IMDB site.
+As we can see, from 1950 to nearly 2015, movies with drama factor is not top priority of producers until after 2015. On the next 5 years, more than 400 movies had been released but then fell to 100 movies per years. With so much choices in a single time range, let's check their quality base on viewer vote score on IMDB site.
 
 ![img_09](img/img_09.png "img_09")
 
-For IMDB Score, we can see we have some NaN values. This because of these movie were release too long in the past or error while collecting datas. Now, we have several options here: set value to 0.0, deleting rows (128 rows), imputation using mean of IMDB Score that year. With only 4.4% of NaN value in total more than 2901 movies, it's safe to delete these rows contain NaN. 
+For IMDB Score, we run in to trouble here. Some records has NaN values in IMDB Score. This because of these movie were release too long in the past or error while collecting datas. Now, we have several options here: set value to 0.0, deleting rows (128 rows), imputation using mean of IMDB Score that year. With only 4.4% of NaN value in total more than 2901 movies, it's safe to delete these rows contain NaN. 
 
 ![img_10](img/img_10.png "img_10")
 
@@ -66,4 +66,4 @@ Let's see what info can new data give us
 
 ![img_11](img/img_11.png "img_11")
 
-We can see a trending in here while total number of movies released in over past 3 year increase but did not get good reviews (low IMDB Score) from audience. Perhaps *quality over quantity* should be a good choice for producers and Netflix.
+A trending in here while total number of movies released in over past 3 year increase but did not get good reviews (low IMDB Score) from audience. Perhaps *quality over quantity* should be a good choice for producers and Netflix.
