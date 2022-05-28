@@ -22,7 +22,7 @@ Let's check if these is any empty value in here
 
 ![img_04](img/img_04.png "img_04")
 
-Theoretically, 25 to 30% of missing value can be allowed, above this threshold we should consider the impact of these columns to our bussiness. In this case, **seasons** can only applied on titles with type is SHOW. For **age_certification** is allowed in this case because not all producers tag their movies with this, we can assume these movies can be watched by everyone. Normally we can drop empty values from our dataset but this may cause loss of information and can produce biased result. We comeback later in IMDB Score and choose how to dealing with this.
+Theoretically, 25 to 30% of missing value can be allowed, above this threshold we should consider the impact of these columns to our bussiness. In this case, **seasons** can only applied on titles with type is SHOW. For **age_certification** is allowed in this case because not all producers tag their movies with this, we can assume these movies can be watched by everyone. Normally we can drop empty values from our dataset but this may cause loss of information and can produce biased result. We'll comeback later in IMDB Score and choose how to deal with this.
 
 ## Question 1:
 *Which genres have the most movies?*
