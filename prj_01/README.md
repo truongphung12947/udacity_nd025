@@ -19,7 +19,7 @@ I use Python3 on Jupyter Notebook.
 4. matplotlib.pyplot
 5. collections
 
-All installed version can be found in requirements.txt
+All installed version and dependencies can be found in requirements.txt
 
 ## File Descriptions
 1. Netflix Movies and TV Show in May 2022 _ titles.csv
