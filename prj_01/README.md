@@ -1,6 +1,6 @@
 # Write a Data Science Blog Post
 
-## Medium Blog Post: 
+## Medium Blog Post: https://medium.com/@truongphung.12947/netflix-movies-and-tv-shows-in-may-2022-analysis-c22263258a87
 
 ## Project Motivation
 
