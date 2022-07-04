@@ -52,7 +52,7 @@ The web app also contains some visualizations that describe the data and input f
     |- train_classifier.py
     |- classifier.pkl  # saved model 
 
-- prep
+- prep (for those who want to read researching process)
     |- categories.csv
     |- messages.csv
     |- classifier.pkl
