@@ -17,23 +17,25 @@ This project require to install libraries
 All installed version and dependencies can be found in requirements.txt
 
 ## Project Description
-1. ETL Pipeline
-Loads the messages and categories datasets
-Merges the two datasets
-Cleans the data
-Stores it in a SQLite database
-2. ML Pipeline
-Loads data from the SQLite database
-Splits the dataset into training and test sets
-Builds a text processing and machine learning pipeline
-Trains and tunes a model using GridSearchCV
-Outputs results on the test set
+1. ETL Pipeline\
+Loads the messages and categories datasets\
+Merges the two datasets\
+Cleans the data\
+Stores it in a SQLite database\
+
+2. ML Pipeline\
+Loads data from the SQLite database\
+Splits the dataset into training and test sets\
+Builds a text processing and machine learning pipeline\
+Trains and tunes a model using GridSearchCV\
+Outputs results on the test set\
 Exports the final model as a pickle file
 
-3. Flask Web App
-The web app also contains some visualizations that describe the data and input form for classification. 
+3. Flask Web App\
+The web app also contains some visualizations that describe the data and input form for classification.
 
 ## File Descriptions
+~~~~~~~
 - app
     | - template
     | |- master.html  # main page of web app
@@ -60,7 +62,9 @@ The web app also contains some visualizations that describe the data and input f
     
 - requirements.txt
 - README.md
-
+~~~~~~~
 ## How to run
+
+1. 
 
 
