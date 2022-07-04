@@ -44,7 +44,7 @@ def index():
     genre_names = list(genre_counts.index)
     print(genre_names)
     
-    # Categories direct distribution
+    # Categories message distribution
     list_categories =  df[df.columns[4:]]
     categories_counts = (list_categories.mean() * list_categories.shape[0]).sort_values(ascending=False)
     categories_names = [x.split('\'')[1] for x in list(categories_counts.index)]
@@ -53,6 +53,7 @@ def index():
     # Top 10 Categories
     top_categories_count = df.iloc[:, 4:].sum().sort_values(ascending=False)[1:11]
     top_categories_names = [x.split('\'')[1] for x in list(top_categories_count.index)]
+    print(top_categories_names)
 
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
