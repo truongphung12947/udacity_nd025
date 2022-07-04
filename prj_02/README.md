@@ -21,7 +21,7 @@ All installed version and dependencies can be found in requirements.txt
 Loads the messages and categories datasets\
 Merges the two datasets\
 Cleans the data\
-Stores it in a SQLite database\
+Stores it in a SQLite database
 
 2. **ML Pipeline**\
 Loads data from the SQLite database\
