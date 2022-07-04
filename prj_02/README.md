@@ -2,7 +2,7 @@
 
 ## Project Motivation
 
-This project (Disaster Response Pipeline) is part of Udacity Data Scientists Nanodegree Program. This project has provied enough dataset and some examples/code structure for me to deploy a ML pipeline from ETL, training model and create a Web Interface for non-technical use to classify message base on its content if there is a disaster in the message context
+This project (Disaster Response Pipeline) is part of Udacity Data Scientists Nanodegree Program. This project has provied enough dataset and some examples/code structure for me to deploy a ML pipeline from ETL, training model and create a Web Interface for non-technical user to classify message base on its content if there is a disaster in the message context
 
 ## Installation
 This project require to install libraries
