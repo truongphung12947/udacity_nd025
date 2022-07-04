@@ -65,8 +65,8 @@ All installed version and dependencies can be found in requirements.txt
 ~~~~~~~
 ## How to run
 
-1. Run data/process_data.py to generate SQLite Database with cleaned data
+1. Run data/process_data.py to generate SQLite Database with cleaned data\
 `python process_data.py disaster_messages.csv disaster_categories.csv DisasterResponse.db`
-2. Run models/train_classifier.py to train and save model to file .pkl
+2. Run models/train_classifier.py to train and save model to file .pkl\
 `python train_classifier.py DisasterResponse.db classifier.pkl`
 3. Run python run.py in /app to start webapp and start to explore
