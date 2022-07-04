@@ -77,6 +77,7 @@ def main():
         db_path, model_path = sys.argv[1:]
         print('Loading data...')
         X, y = load_data(db_path)
+        # create train and test dataset
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
         print('Building model...')
         model = build_model()
