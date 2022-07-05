@@ -9,7 +9,7 @@ This project (Write a Data Science Blog Post) is part of Udacity Data Scientists
 This project focuses on answering following question: 
 - Which target audiences that producers are focused on?
 - Which genres have the most movies and their combination?
-- How many drama movie released every year? And does their quality increase overtime
+- How many drama movie released every year? And does their quality increase overtime ?
 
 ## Libraries
 I use Python3 on Jupyter Notebook.
