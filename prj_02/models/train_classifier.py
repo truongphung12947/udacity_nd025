@@ -18,6 +18,17 @@ from nltk.stem import WordNetLemmatizer
 nltk.download(['punkt', 'wordnet', 'omw-1.4'])
 
 def load_data(db_path):
+    '''
+    load_data
+    Load SQLite databse from pre-defined path and load it to pandas dataframe
+
+    Input
+    db_path     : SQlite file path
+
+    Returns
+    X           : message dataframe
+    y           : feature set for traning
+    '''
     # load sqlite data to dataframe and split dataset
     # load data from database
     engine = create_engine('sqlite:///{0}'.format(db_path))
@@ -29,6 +40,17 @@ def load_data(db_path):
     return X, y
 
 def tokenize(text):
+    '''
+    tokenize
+    Clean all URL matching in dataset an convert them to url keywords.
+    Tokenize words and remove empty spaces, normalize and convert word to lower characters
+    
+    Input
+    text                : input text string
+
+    Returns
+    processed_tokens    : list of tokens
+    '''
     # url regex for matching an URL to clean URL in string, url has no use in classification disaster message and easy confuse with news or links
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     found_urls = re.findall(url_regex, text)
@@ -42,6 +64,16 @@ def tokenize(text):
     return processed_tokens
 
 def build_model():
+    '''
+    build_model
+    Build model using tokeinze function and custom parameter using GridSearchCV
+
+    Input
+    None
+
+    Returns
+    model       : model skeleton to fit data
+    '''
     # build model using RandomForest
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
@@ -57,6 +89,18 @@ def build_model():
     return model
 
 def evaluate_model(model, X_test, y_test):
+    '''
+    evaluate_model
+    Evaluate model and print results to screen for each cateogories and final accuary of all predicted cateogories
+
+    Input
+    X_test      : Input test data
+    y_test      : Output of test data
+    model       : Prediction model
+
+    Returns
+    None
+    '''
     # run evaluation on our model
     y_pred = model.predict(X_test)
     i = 0
@@ -67,6 +111,17 @@ def evaluate_model(model, X_test, y_test):
     print('\tACCURACY: {:.3f}'.format((y_pred == y_test.values).mean()))
 
 def save_model(model, model_path):
+    '''
+    save_model
+    Export model to .pkl for later use with pre-defined location from user input
+
+    Input
+    model       : Exported model
+    model_path  : File path where model is exported
+
+    Returns
+    None
+    '''
     # save model to file for later use
     with open(model_path, 'wb') as file:
         pickle.dump(model, file)

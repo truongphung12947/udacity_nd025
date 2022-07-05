@@ -2,7 +2,7 @@
 
 ## Project Motivation
 
-This project (Disaster Response Pipeline) is part of Udacity Data Scientists Nanodegree Program. This project has provided enough dataset and some examples/code structure for me to deploy a ML pipeline from ETL, train model and create a Web Interface for non-technical user to classify message base on its content if there is a disaster in the message context
+This project (Disaster Response Pipeline) is part of the Udacity Data Scientists Nanodegree Program. This project has provided enough dataset and some examples/code structure for me to deploy an ML pipeline from ETL, train a model and create a Web Interface for non-technical users to classify messages based on their content if there is a disaster in the message context. Through machine learning in real life, this project aims to classify messages sent by people who need help when a disaster happens. Every day there are numerous text, and chat via multiple messaging platforms, in order to classify this big data set will need many people to work for hours to know where or what happened in the message context to decide should they send help or not, all can be reduced by using ML technique, given output in seconds send to local authorities or any agency for humanitarian assistance and disaster response
 
 ## Installation
 This project require to install libraries
