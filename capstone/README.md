@@ -20,15 +20,15 @@ All installed version and dependencies can be found in requirements.txt
 ## Project Description
 1. **Explore Data Analysis**
 
-2. **Rank Based Recommendation**
+2. **Visualization**
 
-3. **User-User Based Collaborative Filtering**
+3. **Data Processing**
 
-4. **Content Base Recommendation**
+4. **Modeling**
 
-5. **Matric Factorization**
+5. **Model Customization**
 
-6. **Extras And Concluding**
+6. **Concluding**
 
 ## File Descriptions
 ~~~~~~~
