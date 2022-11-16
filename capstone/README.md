@@ -1,4 +1,4 @@
-# Write a Data Science Blog Post
+# Starbucks Recommendation
 
 ## Medium Blog Post: https://medium.com/@truongphung.12947/starbucks-recommendation-99a8865fb9b3
 
