@@ -1,27 +1,45 @@
 # Write a Data Science Blog Post
 
-## Medium Blog Post: https://medium.com/@truongphung.12947/netflix-movies-and-tv-shows-in-may-2022-analysis-c22263258a87
+## Medium Blog Post: https://medium.com/@truongphung.12947/starbucks-recommendation-99a8865fb9b3
 
 ## Project Motivation
 
-This project (Write a Data Science Blog Post) is part of Udacity Data Scientists Nanodegree Program. I used Netflix Movies and Show Dataset, this dataset describle all movies/shows details on US on May 2022. The original dataset can be found here: [Netflix - TV Shows and Movies](https://www.kaggle.com/datasets/victorsoeiro/netflix-tv-shows-and-movies)
+This project (Capstone) is part of Udacity Data Scientists Nanodegree Program. In this project, I seletected Starbucks Recommendation to suggest Starbucks on how to suggest best offers for each customer base on their information. All data and Jupyter notebook can be found in this repo for one who want techinical insight, shorten and understandable information for non-technical can be found on my Medium blog.
 
-This project focuses on answering following question: 
-- Which target audiences that producers are focused on?
-- Which genres have the most movies and their combination?
-- How many drama movie released every year? And does their quality increase overtime ?
-
-## Libraries
-I use Python3 on Jupyter Notebook.
+## Installation
+This project require to install libraries
 1. numpy
 2. pandas
-3. seaborn
-4. matplotlib.pyplot
-5. collections
+3. sklearn
+4. plotly
+5. sklearn
+6. matplotlib
 
 All installed version and dependencies can be found in requirements.txt
 
+## Project Description
+1. **Explore Data Analysis**
+
+2. **Rank Based Recommendation**
+
+3. **User-User Based Collaborative Filtering**
+
+4. **Content Base Recommendation**
+
+5. **Matric Factorization**
+
+6. **Extras And Concluding**
+
 ## File Descriptions
-1. Netflix Movies and TV Show in May 2022 _ titles.csv
-2. netflix.ipynb Jupyter Notebooks contain code, analysis, questions and visualization
-3. requirements.txt for installing modules
+~~~~~~~
+- data
+    |- portfolio.csv  # data to process 
+    |- profile.csv  # data to process
+    |- transcript.csv # data to process
+- notebook.ipynb # Jupyter notebook 
+- requirements.txt
+- README.md
+~~~~~~~
+## How to run
+
+Jupyter notebook has already contained all codes and outputs 
